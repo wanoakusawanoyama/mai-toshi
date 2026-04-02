@@ -1,0 +1,877 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --backGroundColor: rgb(253, 253, 251);
+    --mainColor: rgb(9, 5, 91);
+    --accentColor:rgb(243, 101, 208) ;
+    --subColor: #fdefef;
+}
+
+
+body {
+    font-family: "M PLUS 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--mainColor);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: var(--backGroundColor);
+    overflow-x: hidden; /* 横スクロールだけ防ぐ */
+    overflow-y: auto;   /* 縦スクロールを許可 */
+    }
+
+/* ここまで global CSS */
+
+header {
+    background-image: url(../images/back.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
+    color: var(--subColor);
+    padding: 4rem;
+    position: relative;
+}
+
+header .logo {
+    width: 50%;
+    margin: 11rem auto 2rem;
+    
+}
+
+header .hederAll {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header .hederAll a {
+    color: var(--subColor);
+}
+
+header .hederAll .time {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0  auto;
+    font-size: 1.5rem;
+}
+
+header .hederAll .tell {
+    max-width: 400px;
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    background-color: rgba(34, 1, 1, 0.3);
+}
+
+header .hederAll nav ul {
+    max-width: 800px;
+    margin: 3rem auto 0 ;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ---------------ここから広告------------------ */
+/* main .koukoku {
+    width: 500px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10030;
+    display: none;
+    padding: 1rem;
+    background-color: rgb(103, 163, 163);
+}
+
+main .koukoku.active {
+    display: block;
+}
+
+main .koukoku span {
+    color: var(--mainColor);
+    position: absolute;
+    right: 1%;
+    bottom: 0;
+    cursor: pointer;
+} */
+/* ---------------広告ここまで------------------ */
+
+#studio {
+    max-width: 1024px;
+    margin: 0 auto 3rem;
+    padding: 2rem;
+}
+
+#studio h1:nth-child(1) {
+    max-width: 450px ;
+    font-size: 1.5rem;
+    margin: 2rem auto 0 ;
+}
+#studio h1:nth-child(2) {
+    max-width: 600px ;
+    font-size: 2rem;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+#studio p {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+main #lesson {
+    background-color: var(--subColor);
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+/* --------------------花びらと水玉---------------------- */
+/* 花びらのスタイル */
+.petal {
+  position: absolute;
+  top: -10px;
+  width: 15px;
+  height: 15px;
+  background: var(--accentColor);
+  border-radius: 50% 50% 50% 0;
+  opacity: 0.8;
+  transform: rotate(0deg);
+  animation: fall linear infinite;
+}
+
+/* アニメーション */
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.bubbles {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -50px;
+  width: 15px;
+  height: 15px;
+  background: var(--accentColor);
+  border-radius: 50%;
+  animation: rise 20s linear infinite;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) scale(0.5);
+    opacity: 0;
+  }
+}
+/* --------------------花びらと水玉---------------------- */
+
+
+main #lesson h1 {
+    max-width: 450px ;
+    font-size: 2rem;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+main #lesson .lesson-setumei {
+    max-width: 550px;
+    margin: 0 auto 3rem;
+}
+
+main #lesson .man-to-man,
+main #lesson .group,
+main #lesson .beahikodantai {
+    max-width: 650px;
+    border: 1px solid var(--mainColor);
+    border-radius: 0.7rem;
+    padding: 1.5rem;
+    margin:  0 auto 3rem;
+}
+
+main #lesson .man-to-man h2,
+main #lesson .group h2,
+main #lesson .beahikodantai h2 {
+    max-width: 400px;
+    border-radius: 0.5rem;
+    background-color: var(--mainColor);
+    color: var(--backGroundColor);
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0.3rem;
+    margin: 1rem auto 2rem ;
+}
+
+main #lesson .man-to-man button {
+    background-color: var(--accentColor);
+    color: var(--mainColor);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    display: block;
+    margin: 2rem 0 2rem auto;
+}
+main #lesson .man-to-man button:hover {
+    background-color: rgb(247, 3, 178);
+}
+
+/* モーダル */
+.modall {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modall-content {
+  background: white;
+  margin: 5% auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: center;
+  vertical-align: top;
+  height: 80px;
+}
+
+th.sun, td.sun {
+  color: red;
+}
+
+th.sat, td.sat {
+  color: blue;
+}
+
+td.holiday {
+  background-color: #ffeaea;
+}
+
+td.event-day {
+  background-color: #fff6d1;
+  font-weight: bold;
+  border: 2px solid #f0a500;
+}
+
+#calendarTitle {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.calendar-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.calendar-nav span {
+  background-color: var(--accentColor);
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+/* モーダルここまで */
+
+main #lesson .man-to-man h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main #lesson .group p {
+    text-align: center;
+}
+
+main #lesson .group h3,
+main #lesson .beahikodantai h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem auto 1rem;
+}
+
+main #lesson .beahikodantai dl {
+    margin: 1.5rem auto 1rem ;
+}
+
+main #lesson .beahikodantai dl .dantai {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--mainColor);
+    font-size: 1.2rem;
+}
+
+main #lesson .beahikodantai dl .dantai dt,
+main #lesson .beahikodantai dl .dantai dd {
+    flex-basis: calc(100%/3);
+    text-align: center;
+
+}
+
+main .tunagi {
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    margin: 4rem auto 0 ;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.8s ease;
+}
+
+/* 消える時 */
+.is-hidden {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+/* ちょい浮遊感 */
+.is-active {
+  transform: scale(1.05) rotate(2deg);
+}
+
+main .tunagi .gallery11 {
+  width: 30%;
+}
+
+main .tunagi .gallery12,
+main .tunagi .gallery13 {
+    width: 35%;
+}
+
+main #stuff {
+    background-color: rgb(208, 173, 242);
+    margin: 4rem auto;
+    padding: 4rem 1rem;
+    position: relative;
+    color: #333;
+    overflow: hidden;
+}
+
+main #stuff::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(45deg, rgba(255,255,255,0.3) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.3) 75%),
+    linear-gradient(45deg, rgba(255,255,255,0.3) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.3) 75%);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  opacity: 0;
+  animation: fadeInCheck 35s ease-in-out forwards;
+  z-index: 0;
+}
+
+main #stuff * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes fadeInCheck {
+  0% { opacity: 0; }
+  40% { opacity: 1; }
+  75% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+main #stuff h1 {
+    max-width: 450px ;
+    font-size: 2rem;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+main #stuff .instructorToshi {
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+main #stuff .instructorToshi .instructorsetumei,
+main #stuff .instructorbeahiko .beahikosetumei {
+    max-width: 600px;
+    align-self: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main #stuff .varenchino .varensetumei {
+    text-align: center;
+}
+
+main #stuff .instructorToshi .instructorsetumei h4,
+main #stuff .instructorbeahiko .beahikosetumei h4,
+main #stuff .varenchino .varensetumei h4 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+main #stuff .instructorToshi .instructorsetumei h4 span,
+main #stuff .instructorbeahiko .beahikosetumei h4 span,
+main #stuff .varenchino .varensetumei h4 span {
+    font-size: 2.5rem;
+}
+
+main #stuff .instructorToshi .instructorsetumei p,
+main #stuff .instructorbeahiko .beahikosetumei p,
+main #stuff .varenchino .varensetumei p {
+    font-size: 1.2rem;
+}
+
+main #stuff .instructorToshi .instructorsetumei p span {
+   font-size: 1.8rem;
+}
+
+main #stuff .instructorToshi .legend {
+    width: 350px;
+    aspect-ratio: 1/1.5;
+    margin: 0 auto;
+}
+
+main #stuff .instructorbeahiko {
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin: 2rem auto;
+}
+
+main #stuff .varenchino {
+    max-width: 1024px;
+    margin: 4rem auto 2rem;
+}
+
+main #stuff .varenchino .varen5 {
+    max-width: 500px;
+    margin: 0 auto 1rem;
+}
+
+main .tunagi2 {
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    margin: 4rem auto ;
+      opacity: 1;
+  transform: scale(1);
+  transition: all 0.8s ease;
+}
+
+main .tunagi2 .gallery21,
+main .tunagi2 .gallery22,
+main .tunagi2 .gallery23{
+   width: 30%;
+}
+
+.tunagi div:hover,
+.tunagi2 div:hover {
+  transform: scale(1.08);
+}
+
+/* ===== GOODS ===== */
+
+#gallery {
+  background:var(--subColor);
+  padding: 5rem 1rem ;
+}
+
+main #gallery h1 {
+    max-width: 450px ;
+    color: var(--mainColor);
+    font-size: 2rem;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+main #gallery h4 {
+  max-width: 450px;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--mainColor);
+  margin: 0 auto;
+}
+
+main #gallery .syousai {
+  max-width: 450px ;
+  margin: 0 auto 5rem;
+  text-align: center;
+  color: var(--mainColor);
+}
+
+main #gallery .dress {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.placeholder {
+  max-width: 500px;
+  aspect-ratio: 1.5/1;
+  margin: 2rem auto 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main #gallery .kamikazari,
+main #gallery .bag {
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.placeholder1 {
+  max-width: 400px;
+  aspect-ratio: 1.5/1;
+  margin: 2rem auto 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder2 {
+  max-width: 450px;
+  aspect-ratio: 1.5/1;
+  margin: 2rem auto 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  cursor: pointer;
+}
+
+
+/* ===== MODAL ===== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: var(--subColor);
+  padding: 20px;
+  width: 250px;
+  white-space: pre-line;
+  font-weight: 700;
+}
+
+/* ===== TOSHIからのメッセージ ===== */
+
+.toshi-message {
+  text-align: center;
+  margin: 0 auto;
+  padding: 5rem 0;
+  cursor: pointer;
+  background-color: var(--mainColor);
+}
+
+#toshiText {
+    font-size: 1.5rem;
+  line-height: 2;
+  color: var(--subColor);
+  transition: all 0.6s ease;
+}
+
+#toshiText p span {
+  font-size: 1.9rem;
+}
+
+.toshi-message p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-top: 3rem;
+    color: var(--subColor);
+}
+
+.toshi-message:hover {
+  opacity: 0.8;
+}
+
+/* フェードアウト */
+.fade-out {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* フェードイン */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  font-size: 1.1rem;
+  padding: 2rem;
+  background: #eee;
+  text-align: center;
+}
+
+/************************** max-width:800px ***************************/
+
+@media screen and (max-width: 800px) {
+    header {
+    background-position: 10% center;
+    padding:5rem 1rem ;
+}
+
+    header .logo {
+    margin: 9rem auto 2rem;
+}
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    header .hederAll nav ul {
+    max-width: 700px;
+    font-size: 1.2rem;
+}
+}
+
+/************************** max-width:600px ***************************/
+
+@media screen and (max-width: 600px) {
+
+header {
+    padding: 6rem 1rem;
+    background-position: 20% center;
+}
+
+header .logo {
+    width: 60%;
+    margin : 2rem auto 0 ;
+}
+
+header p {
+        font-size: 1rem;
+    }
+
+header .hederAll .time {
+    margin: 2rem auto 1rem;
+    background-color: rgba(34, 1, 1, 0.3);
+}
+
+header .hederAll .tell  {
+    margin: 0 auto 1rem;
+}
+
+header .hederAll nav ul {
+    max-width: 150px;
+    display: block;
+    margin: 2rem auto 0 ;
+    font-size: 1rem;
+}
+
+header .hederAll nav ul li {
+    border-bottom: 1px solid var(--subColor);
+    text-align: center;
+}
+
+main #studio,
+main #lesson,
+main #stuff {
+    padding: 5rem 1rem;
+}
+
+#studio h1:nth-child(1) {
+    font-size: 1.1rem;
+}
+#studio h1:nth-child(2) {
+    font-size: 1.3rem;
+}
+
+#studio p,
+#lesson p {
+    font-size: 1.1rem;
+}
+
+main #lesson .man-to-man h2,
+main #lesson .group h2,
+main #lesson .beahikodantai h2 {
+    font-size: 1.2rem;
+}
+
+main #lesson .man-to-man button {
+    margin: 1.5rem auto 1.5rem ;
+    font-size: 1.1rem;
+}
+
+main #lesson .man-to-man h3 {
+    font-size: 1.2rem;
+}
+
+main #lesson .group h3,
+main #lesson .beahikodantai h3 {
+    font-size: 1.2rem;
+}
+
+main .tunagi,
+main .tunagi2 {
+    display: block;
+}
+
+main .tunagi .gallery11,
+main .tunagi .gallery13,
+main .tunagi2 .gallery21,
+main .tunagi2 .gallery23 {
+    margin: 0 auto;
+}
+
+main .tunagi .gallery12,
+main .tunagi2 .gallery22 {
+    margin: 3rem auto ;
+}
+
+main #stuff .instructorToshi {
+    display: block;
+    margin: 4rem auto;
+    border: 2px solid var(--mainColor);
+    border-radius: 0.5rem;
+    padding-top: 1rem;
+}
+
+main #stuff .instructorToshi .legend {
+    width: 300px;
+    margin: 1rem auto;
+}
+
+main #stuff .instructorbeahiko {
+    display: block;
+    border: 2px solid var(--mainColor);
+    border-radius: 0.5rem;
+    padding-top: 1rem;
+}
+
+main #stuff .instructorbeahiko img {
+    width:80% ;
+}
+
+main #stuff .instructorToshi .instructorsetumei h4,
+main #stuff .instructorbeahiko .beahikosetumei h4,
+main #stuff .varenchino .varensetumei h4 {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+main #stuff .instructorToshi .instructorsetumei h4 span,
+main #stuff .instructorbeahiko .beahikosetumei h4 span,
+main #stuff .varenchino .varensetumei h4 span {
+    font-size: 1.3rem;
+}
+
+main #stuff .instructorToshi .instructorsetumei p,
+main #stuff .instructorbeahiko .beahikosetumei p,
+main #stuff .varenchino .varensetumei p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+main #stuff .instructorbeahiko .beahikosetumei img {
+    margin-bottom: 2rem;
+}
+
+main #stuff .varenchino {
+    border: 2px solid var(--mainColor);
+    border-radius: 0.5rem;
+    padding: 1rem 0 ;
+}
+
+main #stuff .varenchino .varensetumei .varen5 {
+    margin-bottom: 2rem;
+}
+
+main #gallery .dress,
+main #gallery .kamikazari,
+main #gallery .bag {
+    display: block;
+}
+
+main #gallery h4 {
+    margin: 4rem auto;
+}
+
+.placeholder {
+    max-width: 500px;
+}
+
+main #gallery .kamikazari .placeholder1 {
+   max-width: 300px;
+}
+
+main #gallery .bag .placeholder1 {
+  max-width: 300px;
+  margin: 2rem auto 3rem;
+
+}
+
+main #gallery .bag .placeholder2 {
+   max-width: 350px;
+   margin: 2rem auto 3rem;
+}
+}

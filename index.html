@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/destyle.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="logo"><img src="images/studiokogo-1.png" alt="ロゴ"></div>
+            <div class="hederAll">
+                <div class="time">
+                    <p>[OPEN] 12:00</p>
+                    <p>[CLOSE] 21:00</p>
+                    <p>日曜日休校</p>
+                </div>
+                <div class="tell">
+                    <p><a href="mailto:xxxxx@gmail.com">お問い合わせメールはこちら✉️</a></p>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="#studio"><li>当スタジオについて</li></a>
+                        <a href="#lesson"><li>レッスン案内</li></a>
+                        <a href="#stuff"><li>スタッフ紹介</li></a>
+                        <a href="#gallery"><li>ショップ</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- <div class="koukoku">
+                <span>✖︎閉じる</span>
+                <a href="ryokan.html" target="_blank"><img src="images/koukoku.png" alt="旅館たはら" /></a>
+            </div> -->
+            <section id="studio">
+                    <h1>　　　ダンス スタジオ トシ</h1>
+                    <h1>DANCE STUDIO TOSHI について</h1>
+                    <p>当スタジオは、安心と信頼と実績の“レジェンドインストラクターTOSHI”による完全マンツーマンレッスンが大人気の社交ダンス教室です。<br>
+                   踊るパワースポットのTOSHIと共に、明るく楽しくHAPPYにダンスを学びましょう。</p>
+            </section>
+
+            <section id="lesson">
+                <div class="petal-container"></div>
+                <div class="bubbles"></div>
+                <div class="lesson-setumei">
+                    <h1>レッスン案内</h1>
+                    <p>「レジェンドインストラクターTOSHI」によるマンツーマンレッスンと、インストラクターベア彦ブラザーズのグループレッスンと団体レッスンがございます。</p>
+                    <p>ご希望に合わせてお選びください。</p>
+                </div>
+                <div class="man-to-man">
+                    <h2>TOSHIのマンツーマンレッスン</h2>
+                    <p>個人レッスンの日時は不定期です。</p>
+                        <p>都度カレンダーでご確認くださいませ。</p>
+                    <button id="openCalendarBtn">TOSHIのスケジュールを確認する➡️</button>
+
+            <!-- モーダル -->
+                <div id="calendarModal" class="modall">
+                    <div class="modall-content">
+                        <span class="close">&times;</span>
+                        <!-- <p id="calendarTitle">ご予約は tel:078-777-7777 まで</p> -->
+                        <div class="calendar-nav">
+                            <span id="prevMonth">← 前月</span>
+                            <span id="currentMonth"></span>
+                            <span id="nextMonth">翌月 →</span>
+                        </div>
+                        <table id="calendarTable">
+                            <thead>
+                                <tr>
+                                    <th class="sun">日</th><th>月</th><th>火</th><th>水</th>
+                                    <th>木</th><th>金</th><th class="sat">土</th>
+                                </tr>
+                            </thead>
+                            <tbody id="calendarBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            <!-- モーダル ここまで-->
+
+                    <h3>◇ 1レッスン20分　100,000円 ◇</h3>
+                </div>
+                <div class="group">
+                    <h2>ベア彦ブラザーズのグループレッスン</h2>
+                    <p>お友達と一緒に習ってみましょう <br>
+                       3名様から承ります。</p>
+                    <h3>◇ 1レッスン50分　お一人様2,000円 ◇</h3>
+                </div>
+                <div class="beahikodantai">
+                    <h2>ベア彦ブラザーズの団体レッスン</h2>
+                    <h3>◇ 1レッスン50分　お一人様2,000円 ◇</h3>
+                    <h3>◇ 木曜日13:30初級コースのみ　月謝制 ◇<br>
+                        ◇ 8,000円/月 ◇</h3>
+                    <dl>
+                        <div class="dantai"><dt>曜日＆開始時間</dt><dd>コース名</dd><dd>インストラクター</dd></div>
+                        <div class="dantai"><dt>月曜日13:30〜</dt><dd>初級</dd><dd>ベア彦之丞</dd></div>
+                        <div class="dantai"><dt>火曜日13:30〜</dt><dd>中級</dd><dd>ベア彦右衛門</dd></div>
+                        <div class="dantai"><dt>水曜日18:00〜</dt><dd>上級</dd><dd>ベア彦麿</dd></div>
+                        <div class="dantai"><dt>木曜日13:30〜</dt><dd>初級</dd><dd>ベア彦三郎</dd></div>
+                        <div class="dantai"><dt>金曜日18:00〜</dt><dd>中級</dd><dd>ベア彦之助</dd></div>
+                        <div class="dantai"><dt>土曜日12:00〜</dt><dd>上級</dd><dd>ベア彦之丞</dd></div>
+                    </dl>
+                </div>
+            </section>
+
+             <div class="tunagi">
+                <div class="gallery11"><img src="images/gallery5.png" alt=""></div>
+                <div class="gallery12"><img src="images/gallery6.png" alt=""></div>
+                <div class="gallery13"><img src="images/gallery7.png" alt=""></div>
+             </div>
+
+            <section id="stuff">
+                <h1>スタッフ紹介</h1>
+                <div class="instructorToshi">
+                    <div class="instructorsetumei">
+                        <h4>レジェンドインストラクター <span>TOSHI</span></h4>
+                        <p>安心と信頼と実績47年の <span>踊るパワースポット</span></p>
+                        <p>職業 <span>「KING OF IDOL」</span></p>
+                    </div>
+                    <div class="legend"><img src="images/instructor11.png" alt="レジェンドToshi"></div>
+                </div>
+                <div class="instructorbeahiko">
+                    <div class="beahikosetumei">
+                        <h4>インストラクター <span>ベア彦ブラザーズ</span></h4>
+                        <img src="images/instructor2.png" alt="ベア彦ブラザーズ">
+                        <p>TOSHIの分身ベア彦ブラザーズ</p>
+                        <p>左から ベア彦之丞/ベア彦麿/ベア彦右衛門/ベア彦三郎/ベア彦之助</p>
+                        <p>TOSHIと共に踊るパワースポットとして活躍します</p>
+                    </div>
+                </div>
+                <div class="varenchino">
+                    <div class="varensetumei">
+                        <h4>マネージャー <span>バレンチーノ</span></h4>
+                        <div class="varen5"><img src="images/varen5.png" alt="バレン"></div>
+                        <p>プロフェッショナルマネージャー集団</p>
+                        <p>お問い合わせ/お困りごとの相談/各種申し込みは<br>
+                            お気軽にお声がけください。</p>
+                    </div>
+                </div>
+            </section>
+
+             <div class="tunagi2">
+                <div class="gallery21"><img src="images/gallery1.png" alt=""></div>
+                <div class="gallery22"><img src="images/gallery4.png" alt=""></div>
+                <div class="gallery23"><img src="images/gallery2.png" alt=""></div>
+            </div>
+
+            <section id="gallery">
+                <h1>ショップ</h1>
+                <div class="syousai">詳細は画像をクリックしてください。</div>
+
+                <h4>ドレス</h4>
+                    <div class="dress">
+                        <!-- ピンクドレス-->
+                        <div class="item" onclick="openModal('pinkdress')">
+                        <div class="placeholder"><img src="images/dresspink.png" alt="ピンクドレス"></div>
+                        </div>
+                        <!-- 赤ドレス -->
+                        <div class="item" onclick="openModal('akadress')">
+                        <div class="placeholder"><img src="images/ dressred.png" alt="赤ドレス"></div>
+                        </div>
+                    </div>
+
+                <h4>ヘアアクセサリー</h4>
+                    <div class="kamikazari">          
+                        <!-- ピンクアクセ -->
+                        <div class="item" onclick="openModal('pinkaccessory')">
+                        <div class="placeholder1"><img src="images/kamikazaripink.png" alt="髪飾りピンク"></div>
+                        </div>
+                        <!-- 赤アクセ -->
+                        <div class="item" onclick="openModal('akaaccessory')">
+                        <div class="placeholder1"><img src="images/kamikazarired.png" alt="髪飾りあか"></div>
+                        </div>
+                    </div>
+
+                <h4>シューズバッグ</h4>
+                    <div class="bag">
+                        <!-- ピンクシューズバッグ -->
+                        <div class="item" onclick="openModal('pinkbag')">
+                        <div class="placeholder1"><img src="images/shoestoshi.png" alt="ピンクバッグ"></div>
+                        </div>
+                        <!-- 赤シューズバッグ -->
+                        <div class="item" onclick="openModal('akabag')">
+                        <div class="placeholder2"><img src="images/shoesakasima.png" alt="赤バッグ"></div>
+                        </div>
+                    </div>
+
+
+             <!-- ===== MODAL ===== -->
+                <div id="modal" class="modal" onclick="closeModal()">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                <p id="modal-text"></p>
+                </div>
+                </div>
+            </section>
+
+            <div class="toshi-message" id="toshiMessage">
+                <p id="toshiText">
+                    レジェンドインストラクター <span>TOSHI</span> より<br><br>
+                    うまく踊れなくてもいい。<br><br>
+                    楽しめ。
+                </p>
+                <p>もう一回クリック</p>
+            </div>
+        </main>
+
+        <!-- ===== FOOTER ===== -->
+<footer>
+  <p>※本サイトはファンによる創作です。 <br>
+    実在の団体とは関係ありません。</p>
+</footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
