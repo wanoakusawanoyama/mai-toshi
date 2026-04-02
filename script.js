@@ -1,25 +1,3 @@
-// ここから広告------------------------------
-// const banner = document.querySelector(".koukoku");
-
-// function scrollcount(){
-//     let scrollCheck = window.scrollY;
-//     if(scrollCheck >= 3000){
-//         banner.classList.add("active");
-//         window.removeEventListener("scroll" , scrollcount);
-//     }
-//     // console.log(scrollCheck);
-//     }
-
-//     window.addEventListener("scroll" , scrollcount);
-
-//     // *************クリックイベント
-//     const clickButton = document.querySelector(".koukoku span");
-//     function clickevent(){
-//     banner.classList.remove("active");
-//     }
-
-//     clickButton.addEventListener("click" , clickevent);
-// ここまで広告------------------------------
 
 /* --------------------モーダル---------------------- */
 let currentDate = new Date(); // 初期は今月
@@ -222,12 +200,12 @@ function openModal(type) {
     akabag: "シューズバッグ\n\nハッとしてレジェンド柄\n\n¥2,000",
   };
 
-  document.getElementById("modal-text").innerText = text[type];
-  document.getElementById("modal").style.display = "flex";
+  document.getElementById("modal2-text").innerText = text[type];
+  document.getElementById("modal2").style.display = "flex";
 }
 
 function closeModal() {
-  document.getElementById("modal").style.display = "none";
+  document.getElementById("modal2").style.display = "none";
 }
 
 window.addEventListener("scroll", function() {

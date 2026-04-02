@@ -300,11 +300,6 @@ td.event-day {
   border: 2px solid #f0a500;
 }
 
-#calendarTitle {
-    font-size: 1.3rem;
-    text-align: center;
-}
-
 .calendar-nav {
   display: flex;
   justify-content: space-around;
@@ -362,7 +357,7 @@ main .tunagi {
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
-    margin: 4rem auto 0 ;
+    margin: 6rem auto 2rem ;
     opacity: 1;
     transform: scale(1);
     transition: all 0.8s ease;
@@ -501,7 +496,7 @@ main .tunagi2 {
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
-    margin: 4rem auto ;
+    margin: 6rem auto ;
       opacity: 1;
   transform: scale(1);
   transition: all 0.8s ease;
@@ -600,7 +595,7 @@ main #gallery .bag {
 
 
 /* ===== MODAL ===== */
-.modal {
+.modal2 {
   display: none;
   position: fixed;
   top: 0;
@@ -612,7 +607,7 @@ main #gallery .bag {
   align-items: center;
 }
 
-.modal-content {
+.modal2-content {
   background: var(--subColor);
   padding: 20px;
   width: 250px;
@@ -701,11 +696,12 @@ footer {
 header {
     padding: 6rem 1rem;
     background-position: 20% center;
+    height: 90vh;
 }
 
 header .logo {
-    width: 60%;
-    margin : 2rem auto 0 ;
+    width: 80%;
+    margin : 6rem auto 4rem ;
 }
 
 header p {
@@ -722,7 +718,7 @@ header .hederAll .tell  {
 }
 
 header .hederAll nav ul {
-    max-width: 150px;
+    max-width: 200px;
     display: block;
     margin: 2rem auto 0 ;
     font-size: 1rem;
@@ -733,59 +729,59 @@ header .hederAll nav ul li {
     text-align: center;
 }
 
-main #studio,
+main #studio {
+    padding: 5rem 2rem;
+}
+
 main #lesson,
 main #stuff {
-    padding: 5rem 1rem;
+    padding: 5rem 1.5rem
 }
 
 #studio h1:nth-child(1) {
     font-size: 1.1rem;
 }
 #studio h1:nth-child(2) {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+}
+
+main #lesson h1,
+main #stuff h1,
+main #gallery h1 {
+    font-size: 1.2rem;
 }
 
 #studio p,
 #lesson p {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 main #lesson .man-to-man h2,
 main #lesson .group h2,
 main #lesson .beahikodantai h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 main #lesson .man-to-man button {
     margin: 1.5rem auto 1.5rem ;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 main #lesson .man-to-man h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 main #lesson .group h3,
 main #lesson .beahikodantai h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
-main .tunagi,
-main .tunagi2 {
-    display: block;
+main #lesson .beahikodantai dl .dantai {
+    font-size: 1rem;
 }
 
-main .tunagi .gallery11,
-main .tunagi .gallery13,
-main .tunagi2 .gallery21,
-main .tunagi2 .gallery23 {
-    margin: 0 auto;
-}
-
-main .tunagi .gallery12,
-main .tunagi2 .gallery22 {
-    margin: 3rem auto ;
+#calendarModal {
+    font-size: 1rem;
 }
 
 main #stuff .instructorToshi {
@@ -816,19 +812,23 @@ main #stuff .instructorToshi .instructorsetumei h4,
 main #stuff .instructorbeahiko .beahikosetumei h4,
 main #stuff .varenchino .varensetumei h4 {
     margin-top: 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 main #stuff .instructorToshi .instructorsetumei h4 span,
 main #stuff .instructorbeahiko .beahikosetumei h4 span,
 main #stuff .varenchino .varensetumei h4 span {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+}
+
+main #stuff .instructorToshi .instructorsetumei p span {
+    font-size: 1.2rem;
 }
 
 main #stuff .instructorToshi .instructorsetumei p,
 main #stuff .instructorbeahiko .beahikosetumei p,
 main #stuff .varenchino .varensetumei p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -843,17 +843,23 @@ main #stuff .varenchino {
 }
 
 main #stuff .varenchino .varensetumei .varen5 {
+    width: 85%;
     margin-bottom: 2rem;
+}
+
+main #gallery h4 {
+  font-size: 1.1rem;
+  margin: 4rem auto;
+}
+
+main #gallery .syousai {
+  font-size: 1rem;
 }
 
 main #gallery .dress,
 main #gallery .kamikazari,
 main #gallery .bag {
     display: block;
-}
-
-main #gallery h4 {
-    margin: 4rem auto;
 }
 
 .placeholder {
@@ -866,12 +872,29 @@ main #gallery .kamikazari .placeholder1 {
 
 main #gallery .bag .placeholder1 {
   max-width: 300px;
-  margin: 2rem auto 3rem;
+  margin: 2rem auto 0;
 
 }
 
 main #gallery .bag .placeholder2 {
    max-width: 350px;
    margin: 2rem auto 3rem;
+}
+
+#toshiText {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+#toshiText p span {
+  font-size: 1.2rem;
+}
+
+.toshi-message p {
+    font-size: 0.8rem;
+}
+
+footer {
+  font-size: 0.9rem;
 }
 }
