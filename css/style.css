@@ -709,7 +709,7 @@ footer {
 header {
     padding: 6rem 1rem;
     background-position: 20% center;
-    /* height: 90vh; */
+    height: 90vh;
 }
 
 header .logo {
