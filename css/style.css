@@ -1,6 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 iframe {
@@ -468,7 +477,7 @@ main #stuff .instructorToshi .instructorsetumei p span {
 }
 
 main #stuff .instructorToshi .legend {
-    width: 350px;
+    max-width: 400px;
     aspect-ratio: 1/1.5;
     margin: 0 auto;
 }
@@ -517,7 +526,7 @@ main .tunagi2 .gallery23{
 
 #gallery {
   background:var(--subColor);
-  padding: 5rem 1rem ;
+  padding: 5rem 1rem 1rem;
 }
 
 main #gallery h1 {
