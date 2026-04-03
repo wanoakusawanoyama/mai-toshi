@@ -490,6 +490,10 @@ main #stuff .instructorbeahiko {
     margin: 2rem auto;
 }
 
+main #stuff .instructorbeahiko img {
+    margin: 0 auto;
+}
+
 main #stuff .varenchino {
     max-width: 1024px;
     margin: 4rem auto 2rem;
@@ -705,7 +709,7 @@ footer {
 header {
     padding: 6rem 1rem;
     background-position: 20% center;
-    height: 90vh;
+    /* height: 90vh; */
 }
 
 header .logo {
